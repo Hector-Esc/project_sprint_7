@@ -4,7 +4,8 @@ import streamlit as st
 import pandas as pd
 import plotly_express as px
 
-car_data = pd.read_csv('C:/Users/hecto/Documents/Prueba_aplicacion/project_sprint_7/project_sprint_7/vehicles_us.csv') # leer los datos
+url = "https://raw.githubusercontent.com/Hector-Esc/project_sprint_7/main/vehicles_us.csv"
+car_data = pd.read_csv(url)
 
 # crear una casilla de verificación
 build_histogram = st.checkbox('Construir un histograma')
